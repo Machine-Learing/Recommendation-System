@@ -59,4 +59,4 @@ Use a matrix with scores from users about items. Then predict the target user sc
 Split the rating matrix which are ratings that user gave to items, into 'user latent matrix' and 'item latent matrix'. First initialize with random values. By using Gradient Descent method, minimize the error and update weight. Recommend the final top n items.
 ![MF](https://user-images.githubusercontent.com/87661298/204401425-e7b4f591-ab3a-4338-bb0d-9f6dd6a3e8b7.png)
 ***
-![architecture](https://user-images.githubusercontent.com/87661298/204270082-47258e5c-9e6e-41b0-b7c5-567a4ea49f24.png)
+![그림1](https://user-images.githubusercontent.com/87661298/204401649-f6d29064-128e-4d75-9d81-b7887b1a3e94.png)

@@ -46,6 +46,8 @@ https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews
 ### Distance Based (Content-based)
 
 Get the similarity between the given product and other products. Set the similarity as a standard and get n products
+<br>
+![content](https://user-images.githubusercontent.com/87661298/204401976-cd62a800-065e-48cb-9dcc-f644901e60b3.png)
 
 
 ### SVD

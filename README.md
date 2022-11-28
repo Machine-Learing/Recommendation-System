@@ -1,13 +1,16 @@
 # Term-Project
 Machine-Learning Final Term Project - Recommendation System
 
-# Dataset
 
-Amazon Fine Food Review
 
 # Objective
 
 This recommendation system is made to help users, based on user ratings on each food item, select the best fit for themselves and to stimulate sales and increase profits
+
+
+# Dataset
+
+Amazon Fine Food Review
 
 
 # Dataset Description

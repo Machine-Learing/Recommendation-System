@@ -11,6 +11,7 @@ This recommendation system is made to help users, based on user ratings on each 
 # Dataset
 
 Amazon Fine Food Review
+https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews
 
 
 # Dataset Description

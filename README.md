@@ -36,4 +36,10 @@ Amazon Fine Food Review
 
 ## Machine Learning Models
 
+- Random Forest
+- Classification
+- Gradient descent
 
+## Filetering Methods
+- Content-based filtering
+- Collaborative filtering (SVD, Matrix factorization)

@@ -43,8 +43,19 @@ https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews
 
 ## Models
 
-- Distance Based
-- SVD
-- Matrix Fatorization
+### Distance Based (Content-based)
+
+Get the similarity between the given product and other products. Set the similarity as a standard and get n products
+
+
+### SVD
+
+Use a matrix with scores from users about items. Then predict the target user score to unevaluated items and recommend the highest estimated scored items.
+
+
+### Matrix Fatorization
+
+Split the rating matrix which are ratings that user gave to items, into 'user latent matrix' and 'item latent matrix'. First initialize with random values. By using Gradient Descent method, minimize the error and update weight. Recommend the final top n items.
+
 
 ![architecture](https://user-images.githubusercontent.com/87661298/204270082-47258e5c-9e6e-41b0-b7c5-567a4ea49f24.png)

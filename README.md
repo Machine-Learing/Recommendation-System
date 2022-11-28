@@ -6,7 +6,7 @@ Machine-Learning Final Term Project - Recommendation System
 
 Amazon Fine Food Review
 
-***
+
 # Dataset Description
 
 - Reviews from Oct 1999 - Oct 2012
@@ -15,7 +15,7 @@ Amazon Fine Food Review
 - 74,258 products
 - 260 users with > 50 reviews
 
-***
+
 # Data columns (10 columns)
 
 - Id
@@ -31,10 +31,9 @@ Amazon Fine Food Review
 
 ### We used 'ProductId', 'UserId', 'Score' and 'Text'
 
-***
+
 # Recommendation System
 
 ## Machine Learning Models
-_ 
 
-- 
+

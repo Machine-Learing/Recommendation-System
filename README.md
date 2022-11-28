@@ -40,12 +40,10 @@ Amazon Fine Food Review
 
 # Recommendation System
 
-## Machine Learning Models
+## Models
 
-- Random Forest
-- Classification
-- Gradient descent
+- Distance Based
+- SVD
+- Matrix Fatorization
 
-## Filetering Methods
-- Content-based filtering
-- Collaborative filtering (SVD, Matrix factorization)
+

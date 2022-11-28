@@ -46,4 +46,4 @@ Amazon Fine Food Review
 - SVD
 - Matrix Fatorization
 
-
+![architecture](https://user-images.githubusercontent.com/87661298/204270082-47258e5c-9e6e-41b0-b7c5-567a4ea49f24.png)

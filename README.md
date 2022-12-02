@@ -61,9 +61,8 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 ***
 ![그림1](https://user-images.githubusercontent.com/87661298/204401649-f6d29064-128e-4d75-9d81-b7887b1a3e94.png)
 
-#Function definition
+# Function Definition
 
-:- |
 **
 |<p></p><p><h1>**content\_recommender(productid, n\_of\_recomm)**</h1></p><p></p>|
 | :-: |

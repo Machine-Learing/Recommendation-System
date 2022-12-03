@@ -148,10 +148,8 @@ MF1 – When you search for a user, it recommends the top N products that are si
 | --- |
 |
 
-# **4-3. Analysis Results**
+# **Analysis Results**
 
- |
-|
 
 #### **Recommender with Cosine similarity**
  ![](RackMultipart20221203-1-vhq3rt_html_a76e368b3f92ab80.png)

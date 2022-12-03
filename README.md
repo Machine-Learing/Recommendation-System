@@ -88,7 +88,7 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |**Methods::**|
 |<p>data\_clean(df, features, m)                Select data</p><p>data\_clean\_sum(df, features, m)           Count data for data\_clean</p>|
 
-|<p></p><p><h1></h1></p>|
+| |
 | :- |
 
 |	|

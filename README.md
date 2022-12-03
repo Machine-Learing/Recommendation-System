@@ -89,6 +89,7 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>data\_clean(df, features, m)                Select data</p><p>data\_clean\_sum(df, features, m)           Count data for data\_clean</p>|
 
 |<p></p><p><h1></h1></p>|
+| :- |
 
 |	|
 | :- |
@@ -110,9 +111,8 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |**Methods::**|
 |<p>Calculate\_mse(x)                  Calculate mse and print train, test error</p><p>dawcm(y\_dred, y\_test=test, title=’‘)  plot the confusion matrix</p><p>Rec(result, uid, n, rawId=False)      Recommend product ID with userID</p>|
 
-|<p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|
-
 |<p></p><p>**MF1(data, factors, maxIter, LRate, GD\_end, plot)**</p><p></p>|
+| :- |
 ||
 |<p></p><p>MF1 – When you search for a user, it recommends the top N products that are similar to it with matrix factorization algorithm.</p><p></p>|
 |**Parameters::**|

@@ -101,7 +101,7 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>**data.loc[sim\_scores.index][['ProductId','Text']] : DataFrame**</p><p>Index, id, text of TOP N similar products</p>|
 
 ||
-| :- |
+
 
 ||
 | :- |

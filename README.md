@@ -88,9 +88,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |**Methods::**|
 |<p>data\_clean(df, features, m)                Select data</p><p>data\_clean\_sum(df, features, m)           Count data for data\_clean</p>|
 
-| |
-| :- |
-
 |	|
 | :- |
 |<p></p><p>**content\_recommender(productid, n\_of\_recomm)**</p><p></p>|

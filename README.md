@@ -1,16 +1,5 @@
 # Recommendation System
 
-| Week | 세미나 | 과제 |커리큘럼 내용 |
-| ------ | -- | -- |----------- |
-| 1주차 | ☑️ | ☑️ | iOS 기초, H.I.G를 통한 컴포넌트의 이해, 화면 전환 |
-| 2주차 | ☑️ | ☑️ | Autolayout을 통한 기초 UI구성, Scroll View의 이해 |
-| 3주차 | ☑️ | ☑️ | TableView, CollectionView, 데이터 전달 방식 |
-| 4주차 | ☑️ | ☑️ | Cocoapods & Networking + 솝커톤 전 보충 세미나 |
-| 5주차 |  |  |디자인 합동 세미나 |
-| 6주차 |  |  |서버 합동 세미나 + 솝커톤  |
-| 7주차 |  |  |클론 코딩을 통한 실전 UI 구성, Animation, 통신 보충  |
-| 8주차 |  |  |e기획 경선 + 앱잼 전 보충
-
 # Objective
 
 This recommendation system is made to help users, based on user ratings on each food item, select the best fit for themselves and to stimulate sales and increase profits
@@ -79,8 +68,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 
 # Function Definition
 
-|	|
-| :- |
 |<p></p><p>**Data(dataset)**</p><p></p>|
 |Data – It preprocesses the input data set and returns the values of z, total\_u, total\_p, pid2PID, train, test, table, raw\_data.|
 |**Parameters::**|

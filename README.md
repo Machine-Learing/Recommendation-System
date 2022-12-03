@@ -69,60 +69,54 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 ![그림1](https://user-images.githubusercontent.com/87661298/204401649-f6d29064-128e-4d75-9d81-b7887b1a3e94.png)
 
 # Function Definition
-	
 
-Data(dataset)
-
-Data – It preprocesses the input data set and returns the values of z, total_u, total_p, pid2PID, train, test, table, raw_data.
-Parameters::
-dataset : String, default = None
-The path to the data file the user wants to use. Features that are not needed do not need to be deleted separately. 
-Methods::
-data_clean(df, features, m)                Select data
-data_clean_sum(df, features, m)           Count data for data_clean
-
-
-	
-
-content_recommender(productid, n_of_recomm)
+| |
+| --- |
+|
+**Data(dataset)**
+ |
+| Data – It preprocesses the input data set and returns the values of z, total\_u, total\_p, pid2PID, train, test, table, raw\_data. |
+| Parameters:: |
+| **dataset : String_, default = None_**** The path to the data file the user wants to use. Features that are not needed do not need to be deleted separately. ![](RackMultipart20221203-1-vhq3rt_html_4211d3a63e2d7c66.png)** |
+| Methods:: |
+| data\_clean(df, features, m) Select datadata\_clean\_sum(df, features, m) Count data for data\_clean |
 
 
-content_recommender – When you search for a product, it recommends the top N products that are similar to it with Tfid vectorizer and cosine similarity algorithm.
+#
 
-Parameters::
-productid : String, default = None
-ID of the product to target 
+| |
+| --- |
+|
+content\_recommender(productid, n\_of\_recomm)
+ |
+|
+content\_recommender – When you search for a product, it recommends the top N products that are similar to it with Tfid vectorizer and cosine similarity algorithm.
+ |
+| Parameters:: |
+| productid : String_, default = None_ID of the product to target
+**n\_of\_recomm : Int_, default = None_** Number of similar products to be recommended ![](RackMultipart20221203-1-vhq3rt_html_8823e05746748c48.png)
+ |
+| **Returns::** |
+| **data.loc[sim\_scores.index][['ProductId','Text']] : DataFrame**Index, id, text of TOP N similar products |
 
-n_of_recomm : Int, default = None
-Number of similar products to be recommended 
- 
 
-Returns::
-data.loc[sim_scores.index][['ProductId','Text']] : DataFrame
-Index, id, text of TOP N similar products
-
-
-
+|
+ |
+| --- |
+|
 svdrec(table, factors)
-
-
+ |
+|
 svdrec – When you search for a user, it recommends the top N products that are similar to it with svd algorithm.
-
-Parameters::
-
-table : Array, default = table
-An array form of a matrix for items recommended by the user in the past.
-factors : int, default = table
-An integer factor value required for SVD algorithm.
- 
-
-Returns::
-pred_mat : Array
-Using the SVD algorithm, the empty place of the existing matrix is filled and predicted matrix.
-Methods::
-Calculate_mse(x)                  Calculate mse and print train, test error
-dawcm(y_dred, y_test=test, title=’‘)  plot the confusion matrix
-Rec(result, uid, n, rawId=False)      Recommend product ID with userID
+ |
+| Parameters:: |
+|
+**table : Array_, default = table_** An array form of a matrix for items recommended by the user in the past. **factors : int_, default = table_** An integer factor value required for SVD algorithm. ![](RackMultipart20221203-1-vhq3rt_html_337745938fba90ae.png)
+ |
+| Returns:: |
+| **pred\_mat : Array** Using the SVD algorithm, the empty place of the existing matrix is filled and predicted matrix. |
+| **Methods::** |
+| Calculate\_mse(x) Calculate mse and print train, test errordawcm(y\_dred, y\_test=test, title='') plot the confusion matrixRec(result, uid, n, rawId=False) Recommend product ID with userID |
 
 
 
@@ -130,36 +124,51 @@ Rec(result, uid, n, rawId=False)      Recommend product ID with userID
 
 
 
-
-
-
-
-
-
-MF1(data, factors, maxIter, LRate, GD_end, plot)
-
-
-
+|
+MF1(data, factors, maxIter, LRate, GD\_end, plot)
+ |
+| --- |
+|
+ |
+|
 MF1 – When you search for a user, it recommends the top N products that are similar to it with matrix factorization algorithm.
+ |
+| Parameters:: |
+| **data : Array_, default = z_** An array form of a matrix for items recommended by the user in the past. **factors : Int_, default = 30_** An integer factor value required for matrix factorization algorithm. **maxIter : Int_, default = 100_** Maximum number of trainings to apply to gradient descent. **LRate : Float_, default = 0.02_** learning rate of trainings to apply to gradient descent. **GD\_end : Float_, default = 1e-3_** The threshold at which gradient descent will stop. **plot : Boolean_, default = False_** Whether or not to plot the results. ![](RackMultipart20221203-1-vhq3rt_html_186d848740a29718.png) |
+| Returns:: |
+| **P.dot(Q.T) : Array**Using the matrix factorization algorithm, the empty place of the existing matrix is filled and predicted matrix. |
+| **Methods::** |
+| Calculate\_mse(x) Calculate mse and print train, test errordawcm(y\_dred, y\_test=test, title='') plot the confusion matrixRec(result, uid, n, rawId=False) Recommend product ID with userID |
 
-Parameters::
-data : Array, default = z
-An array form of a matrix for items recommended by the user in the past.
-factors : Int, default = 30
-An integer factor value required for matrix factorization algorithm.
-maxIter : Int, default = 100
-Maximum number of trainings to apply to gradient descent.
-LRate : Float, default = 0.02
-learning rate of trainings to apply to gradient descent.
-GD_end : Float, default = 1e-3
-The threshold at which gradient descent will stop.
-plot : Boolean, default = False
-Whether or not to plot the results.
- 
-Returns::
-P.dot(Q.T) : Array
-Using the matrix factorization algorithm, the empty place of the existing matrix is filled and predicted matrix.
-Methods::
-Calculate_mse(x)                  Calculate mse and print train, test error
-dawcm(y_dred, y_test=test, title=’‘)  plot the confusion matrix
-Rec(result, uid, n, rawId=False)      Recommend product ID with userID
+
+
+
+
+| |
+| --- |
+|
+
+# **4-3. Analysis Results**
+
+ |
+|
+
+#### **Recommender with Cosine similarity**
+ ![](RackMultipart20221203-1-vhq3rt_html_a76e368b3f92ab80.png)
+This is the result of running the recommendation system with the product ID and N related to dog food as 20. TOP1 is dog food, and TOP2 is a good recommendation for similar products for dog snacks.
+
+
+
+
+
+
+
+
+
+**SVD**![](RackMultipart20221203-1-vhq3rt_html_c9a52ae395ab2164.png)In our recommendation system, we have such a matrix which has many scores from the users to the items. We hope to predict the targeted users' score to other unevaluated items and then recommend the items with the highest five scores. The advantage of SVD is that: users' score matrix is a sparse matrix, so we can map the original data into a Low-dimensional space and then calculate the similarity of different items. This can help us reduce calculation complexity.So, the results are neither good nor bad.
+
+
+#### **Matrix Factorization**
+ ![](RackMultipart20221203-1-vhq3rt_html_d32bc90bc26362ef.png)Latent factor models are an alternative approach that tries to explain the ratings by characterizing both items and users on, say, 20 to 100 factors inferred from the ratings patterns. For products, the discovered factors might measure obvious dimensions such as candy vs drinks, or adult food vs children's; For users, each factor measures how much the user likes the product that score high on the corresponding movie factor. Using latent factor model, we transform the way to calculate the similarity of users and products. The features become more stable and condense.
+
+**The MF gives a very good prediction: the train set MSE is 0.03542 and the test set MSE is 0.03385. While both MSEs are equally small, thus no overfitting problem occurs. In addition, as image shows that the number of latent factors significantly affect.**![](RackMultipart20221203-1-vhq3rt_html_7d076ef594028c2f.png)As the number of latent factors increase, the MSE decreases. And MSE converges around n=20. |

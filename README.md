@@ -69,3 +69,97 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 ![그림1](https://user-images.githubusercontent.com/87661298/204401649-f6d29064-128e-4d75-9d81-b7887b1a3e94.png)
 
 # Function Definition
+	
+
+Data(dataset)
+
+Data – It preprocesses the input data set and returns the values of z, total_u, total_p, pid2PID, train, test, table, raw_data.
+Parameters::
+dataset : String, default = None
+The path to the data file the user wants to use. Features that are not needed do not need to be deleted separately. 
+Methods::
+data_clean(df, features, m)                Select data
+data_clean_sum(df, features, m)           Count data for data_clean
+
+
+	
+
+content_recommender(productid, n_of_recomm)
+
+
+content_recommender – When you search for a product, it recommends the top N products that are similar to it with Tfid vectorizer and cosine similarity algorithm.
+
+Parameters::
+productid : String, default = None
+ID of the product to target 
+
+n_of_recomm : Int, default = None
+Number of similar products to be recommended 
+ 
+
+Returns::
+data.loc[sim_scores.index][['ProductId','Text']] : DataFrame
+Index, id, text of TOP N similar products
+
+
+
+svdrec(table, factors)
+
+
+svdrec – When you search for a user, it recommends the top N products that are similar to it with svd algorithm.
+
+Parameters::
+
+table : Array, default = table
+An array form of a matrix for items recommended by the user in the past.
+factors : int, default = table
+An integer factor value required for SVD algorithm.
+ 
+
+Returns::
+pred_mat : Array
+Using the SVD algorithm, the empty place of the existing matrix is filled and predicted matrix.
+Methods::
+Calculate_mse(x)                  Calculate mse and print train, test error
+dawcm(y_dred, y_test=test, title=’‘)  plot the confusion matrix
+Rec(result, uid, n, rawId=False)      Recommend product ID with userID
+
+
+
+
+
+
+
+
+
+
+
+
+
+MF1(data, factors, maxIter, LRate, GD_end, plot)
+
+
+
+MF1 – When you search for a user, it recommends the top N products that are similar to it with matrix factorization algorithm.
+
+Parameters::
+data : Array, default = z
+An array form of a matrix for items recommended by the user in the past.
+factors : Int, default = 30
+An integer factor value required for matrix factorization algorithm.
+maxIter : Int, default = 100
+Maximum number of trainings to apply to gradient descent.
+LRate : Float, default = 0.02
+learning rate of trainings to apply to gradient descent.
+GD_end : Float, default = 1e-3
+The threshold at which gradient descent will stop.
+plot : Boolean, default = False
+Whether or not to plot the results.
+ 
+Returns::
+P.dot(Q.T) : Array
+Using the matrix factorization algorithm, the empty place of the existing matrix is filled and predicted matrix.
+Methods::
+Calculate_mse(x)                  Calculate mse and print train, test error
+dawcm(y_dred, y_test=test, title=’‘)  plot the confusion matrix
+Rec(result, uid, n, rawId=False)      Recommend product ID with userID

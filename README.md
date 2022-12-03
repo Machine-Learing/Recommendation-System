@@ -94,7 +94,8 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p></p><p><h1></h1></p>|
 | :- |
 
-
+|	|
+| :- |
 |<p></p><p>**content\_recommender(productid, n\_of\_recomm)**</p><p></p>|
 |<p></p><p>content\_recommender – When you search for a product, it recommends the top N products that are similar to it with Tfid vectorizer and cosine similarity algorithm.</p><p></p>|
 |**Parameters::**|
@@ -105,6 +106,8 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 ||
 | :- |
 
+||
+| :- |
 |<p></p><p>**svdrec(table, factors)**</p><p></p>|
 |<p></p><p>svdrec – When you search for a user, it recommends the top N products that are similar to it with svd algorithm.</p><p></p>|
 |**Parameters::**|

@@ -79,7 +79,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 
 # Function Definition
 
-|	|
 | :- |
 |<p></p><p>**Data(dataset)**</p><p></p>|
 |Data – It preprocesses the input data set and returns the values of z, total\_u, total\_p, pid2PID, train, test, table, raw\_data.|

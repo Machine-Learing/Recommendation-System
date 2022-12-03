@@ -68,6 +68,8 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 
 # Function Definition
 
+|	|
+| :- |
 |<p></p><p>**Data(dataset)**</p><p></p>|
 |Data – It preprocesses the input data set and returns the values of z, total\_u, total\_p, pid2PID, train, test, table, raw\_data.|
 |**Parameters::**|
@@ -97,8 +99,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>Calculate\_mse(x)                  Calculate mse and print train, test error</p><p>dawcm(y\_dred, y\_test=test, title=’‘)  plot the confusion matrix</p><p>Rec(result, uid, n, rawId=False)      Recommend product ID with userID</p>|
 
  **MF1(data, factors, maxIter, LRate, GD\_end, plot)**</p><p></p>|
-| :- |
-||
 |<p></p><p>MF1 – When you search for a user, it recommends the top N products that are similar to it with matrix factorization algorithm.</p><p></p>|
 |**Parameters::**|
 |<p>**data : Array*, default = z***</p><p>An array form of a matrix for items recommended by the user in the past.</p><p>**factors : Int*, default = 30***</p><p>An integer factor value required for matrix factorization algorithm.</p><p>**maxIter : Int*, default = 100***</p><p>Maximum number of trainings to apply to gradient descent.</p><p>**LRate : Float*, default = 0.02***</p><p>learning rate of trainings to apply to gradient descent.</p><p>**GD\_end : Float*, default = 1e-3***</p><p>The threshold at which gradient descent will stop.</p><p>**plot : Boolean*, default = False***</p><p>Whether or not to plot the results.</p><p>![](Aspose.Words.ec69fc15-75be-4c9e-82fc-52419fed1ab1.016.png)</p>|

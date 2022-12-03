@@ -80,10 +80,7 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 # Function Definition
 
 |<p></p><p></p><p></p><p></p><p><h1>**4-2. Function Description**</h1></p>|
-| :- |
 
-|	|
-| :- |
 |<p></p><p>**Data(dataset)**</p><p></p>|
 |Data – It preprocesses the input data set and returns the values of z, total\_u, total\_p, pid2PID, train, test, table, raw\_data.|
 |**Parameters::**|
@@ -103,11 +100,7 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |**Returns::**|
 |<p>**data.loc[sim\_scores.index][['ProductId','Text']] : DataFrame**</p><p>Index, id, text of TOP N similar products</p>|
 
-||
-| :- |
 
-||
-| :- |
 |<p></p><p>**svdrec(table, factors)**</p><p></p>|
 |<p></p><p>svdrec – When you search for a user, it recommends the top N products that are similar to it with svd algorithm.</p><p></p>|
 |**Parameters::**|
@@ -132,10 +125,7 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>Calculate\_mse(x)                  Calculate mse and print train, test error</p><p>dawcm(y\_dred, y\_test=test, title=’‘)  plot the confusion matrix</p><p>Rec(result, uid, n, rawId=False)      Recommend product ID with userID</p>|
 
 |<p></p><p></p><p></p><p></p><p></p><p></p>|
-| :- |
 
-|	|
-| :- |
 # **Analysis Results**
 
 

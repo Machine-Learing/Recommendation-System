@@ -130,8 +130,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>**P.dot(Q.T) : Array**</p><p>Using the matrix factorization algorithm, the empty place of the existing matrix is filled and predicted matrix.</p>|
 |**Methods::**|
 |<p>Calculate\_mse(x)                  Calculate mse and print train, test error</p><p>dawcm(y\_dred, y\_test=test, title=’‘)  plot the confusion matrix</p><p>Rec(result, uid, n, rawId=False)      Recommend product ID with userID</p>|
-
-|<p></p><p></p><p></p><p></p><p></p><p></p>|
 | :- |
 
 # **Analysis Results**

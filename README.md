@@ -78,8 +78,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 ![그림1](https://user-images.githubusercontent.com/87661298/204401649-f6d29064-128e-4d75-9d81-b7887b1a3e94.png)
 
 # Function Definition
-
-|<p></p><p></p><p></p><p></p><p><h1>**4-2. Function Description**</h1></p>|
 | :- |
 
 |	|
@@ -130,7 +128,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>**P.dot(Q.T) : Array**</p><p>Using the matrix factorization algorithm, the empty place of the existing matrix is filled and predicted matrix.</p>|
 |**Methods::**|
 |<p>Calculate\_mse(x)                  Calculate mse and print train, test error</p><p>dawcm(y\_dred, y\_test=test, title=’‘)  plot the confusion matrix</p><p>Rec(result, uid, n, rawId=False)      Recommend product ID with userID</p>|
-| :- |
 
 # **Analysis Results**
 

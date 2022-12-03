@@ -101,9 +101,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>**data.loc[sim\_scores.index][['ProductId','Text']] : DataFrame**</p><p>Index, id, text of TOP N similar products</p>|
 
 ||
-
-
-||
 | :- |
 |<p></p><p>**svdrec(table, factors)**</p><p></p>|
 |<p></p><p>svdrec – When you search for a user, it recommends the top N products that are similar to it with svd algorithm.</p><p></p>|
@@ -115,7 +112,6 @@ Split the rating matrix which are ratings that user gave to items, into 'user la
 |<p>Calculate\_mse(x)                  Calculate mse and print train, test error</p><p>dawcm(y\_dred, y\_test=test, title=’‘)  plot the confusion matrix</p><p>Rec(result, uid, n, rawId=False)      Recommend product ID with userID</p>|
 
 |<p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>|
-| :- |
 
 |<p></p><p>**MF1(data, factors, maxIter, LRate, GD\_end, plot)**</p><p></p>|
 | :- |

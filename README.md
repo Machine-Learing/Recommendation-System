@@ -163,10 +163,12 @@ This is the result of running the recommendation system with the product ID and 
 
 
 
-**SVD**![](RackMultipart20221203-1-vhq3rt_html_c9a52ae395ab2164.png)In our recommendation system, we have such a matrix which has many scores from the users to the items. We hope to predict the targeted users' score to other unevaluated items and then recommend the items with the highest five scores. The advantage of SVD is that: users' score matrix is a sparse matrix, so we can map the original data into a Low-dimensional space and then calculate the similarity of different items. This can help us reduce calculation complexity.So, the results are neither good nor bad.
+#### **SVD**
+![](RackMultipart20221203-1-vhq3rt_html_c9a52ae395ab2164.png)In our recommendation system, we have such a matrix which has many scores from the users to the items. We hope to predict the targeted users' score to other unevaluated items and then recommend the items with the highest five scores. The advantage of SVD is that: users' score matrix is a sparse matrix, so we can map the original data into a Low-dimensional space and then calculate the similarity of different items. This can help us reduce calculation complexity.So, the results are neither good nor bad.
 
 
 #### **Matrix Factorization**
  ![](RackMultipart20221203-1-vhq3rt_html_d32bc90bc26362ef.png)Latent factor models are an alternative approach that tries to explain the ratings by characterizing both items and users on, say, 20 to 100 factors inferred from the ratings patterns. For products, the discovered factors might measure obvious dimensions such as candy vs drinks, or adult food vs children's; For users, each factor measures how much the user likes the product that score high on the corresponding movie factor. Using latent factor model, we transform the way to calculate the similarity of users and products. The features become more stable and condense.
 
-**The MF gives a very good prediction: the train set MSE is 0.03542 and the test set MSE is 0.03385. While both MSEs are equally small, thus no overfitting problem occurs. In addition, as image shows that the number of latent factors significantly affect.**![](RackMultipart20221203-1-vhq3rt_html_7d076ef594028c2f.png)As the number of latent factors increase, the MSE decreases. And MSE converges around n=20. |
+The MF gives a very good prediction: the train set MSE is 0.03542 and the test set MSE is 0.03385. While both MSEs are equally small, thus no overfitting problem occurs. In addition, as image shows that the number of latent factors significantly affect.
+![](RackMultipart20221203-1-vhq3rt_html_7d076ef594028c2f.png)As the number of latent factors increase, the MSE decreases. And MSE converges around n=20. |
